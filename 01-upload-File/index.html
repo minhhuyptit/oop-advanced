@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PHP Show Data</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>		
+<body>
+	<div class="container my-content">
+		<h1 class="page-header">PHP OOP - Upload File</h1>
+		
+		<div class="row">
+			<!-- FORM UPLOAD -->
+			<form action="proccess.php" method="post" id="main-form" name="main-form" class="form-inline" enctype="multipart/form-data">
+				<input type="file" id="file-upload" name="file-upload" style="display: none;">
+				<a class="btn btn-info" id="select-file" href="#" onclick="javascript:openFile();">Select File</a>
+				<button type="submit" class="btn btn-primary">Upload</button>
+			</form>
+		</div>
+		<!-- ERROR -->
+		<ul class="alert alert-danger">
+			<li>PHP Show Data</li>
+			<li>PHP Show Data</li>
+			<li>PHP Show Data</li>
+		</ul>
+			
+		<div class="row content-course">
+			
+			
+			<!-- IMAGE INFO -->
+			<div class="col-md-2">
+				<div class="thumbnail">
+					<img src="data/image-150.jpg" />
+					<div class="caption">
+						<a href="#" class="label label-success" data-toggle="modal" data-target="#myModal">View</a> 
+						<a href="#" class="label label-success" role="button">Delete</a>
+					</div>
+				</div>
+			</div>
+			
+			<!-- IMAGE INFO -->	
+			<div class="col-md-2">
+				<div class="thumbnail">
+					<img src="data/image-150.jpg" />
+					<div class="caption">
+						<a href="#" class="label label-success" >View</a> 
+						<a href="#" class="label label-success" role="button">Delete</a>
+					</div>
+				</div>
+			</div>
+			
+			<!-- IMAGE INFO -->	
+			<div class="col-md-2">
+				<div class="thumbnail">
+					<img src="data/image-150.jpg" />
+					<div class="caption">
+						<a href="#" class="label label-success" >View</a> 
+						<a href="#" class="label label-success" role="button">Delete</a>
+					</div>
+				</div>
+			</div>
+			
+			<!-- IMAGE INFO -->	
+			<div class="col-md-2">
+				<div class="thumbnail">
+					<img src="data/image-150.jpg" />
+					<div class="caption">
+						<a href="#" class="label label-success" >View</a> 
+						<a href="#" class="label label-success" role="button">Delete</a>
+					</div>
+				</div>
+			</div>
+			
+			<!-- IMAGE INFO -->	
+			<div class="col-md-2">
+				<div class="thumbnail">
+					<img src="data/image-150.jpg" />
+					<div class="caption">
+						<a href="#" class="label label-success" >View</a> 
+						<a href="#" class="label label-success" role="button">Delete</a>
+					</div>
+				</div>
+			</div>
+			
+			<!-- IMAGE INFO -->	
+			<div class="col-md-2">
+				<div class="thumbnail">
+					<img src="data/image-150.jpg" />
+					<div class="caption">
+						<a href="#" class="label label-success" >View</a> 
+						<a href="#" class="label label-success" role="button">Delete</a>
+					</div>
+				</div>
+			</div>
+			
+			<!-- IMAGE INFO -->	
+			<div class="col-md-2">
+				<div class="thumbnail">
+					<img src="data/image-150.jpg" />
+					<div class="caption">
+						<a href="#" class="label label-success" >View</a> 
+						<a href="#" class="label label-success" role="button">Delete</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- POPUP -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-md">
+				<div class="modal-content">
+					<div class="modal-body">
+						<img src="data/image-500.jpg" />
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		function openFile(){
+			$('#file-upload').click(); 
+			return false;
+		}
+		
+		$(document).ready(function(){
+			$('#file-upload').on('change',function(){
+				var filename = this.value.split('\\').pop();
+				alert(filename);
+				$('a#select-file').text(filename);
+			}) 
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+.print_r {
+	display: block;
+	background-color: #f6e8f0;
+}
+
+.my-content .page-header {
+	border-bottom: 0px;
+	text-align: center;
+	color: #db3179;
+	margin: 15px;
+}
+
+.my-content .content-course {
+	padding: 20px;
+	border-radius: 10px;
+	border: 2px solid #abc3ae;
+	margin-bottom: 20px;
+}
+
+#main-form {
+	margin-bottom: 20px;
+	text-align: right;
+}
+
+.modal-md {
+	width:500px;
+}
+
+.modal-footer {
+	margin-top: 15px;
+	padding: 9px 20px;
+}
+
+.thumbnail {
+	padding: 15px;
+}
+
+.thumbnail .caption {
+	text-align: center;
+}
+
+#myModal .modal-body {
+	text-align: center;
+}
+
+.alert {
+	padding: 10px 30px;
+}

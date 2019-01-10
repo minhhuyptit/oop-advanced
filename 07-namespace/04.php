@@ -1,6 +1,6 @@
 <?php
 
-    namespace qqq;   //Nhưng nếu file này có 1 namespace và ta ko dùng use mà gọi trực tiếp thì cần có thêm \xxx\Student
+    namespace qqq;   //Nhưng nếu file này có 1 namespace và ta ko dùng use mà gọi trực tiếp  thì cần có thêm \xxx\Student
     use xxx\Student;    //Zo thẳng class Student mới khởi tạo đối tượng trong đây được
 
     //  Thực hành namspace với 
